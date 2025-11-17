@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ImageIcon } from './icons/ImageIcon';
+import { ImageIcon } from './icons/ImageIcon.tsx';
 
 export const Header: React.FC = () => {
   return (

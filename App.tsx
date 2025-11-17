@@ -1,14 +1,13 @@
-
 import React, { useState, useCallback } from 'react';
-import { Header } from './components/Header';
-import { LogoUploader } from './components/LogoUploader';
-import { PromptInput } from './components/PromptInput';
-import { GeneratedImage } from './components/GeneratedImage';
-import { Button } from './components/Button';
-import { UploadIcon } from './components/icons/UploadIcon';
-import { SparklesIcon } from './components/icons/SparklesIcon';
-import { generateMockup } from './services/geminiService';
-import type { UploadedFile } from './types';
+import { Header } from './components/Header.tsx';
+import { LogoUploader } from './components/LogoUploader.tsx';
+import { PromptInput } from './components/PromptInput.tsx';
+import { GeneratedImage } from './components/GeneratedImage.tsx';
+import { Button } from './components/Button.tsx';
+import { UploadIcon } from './components/icons/UploadIcon.tsx';
+import { SparklesIcon } from './components/icons/SparklesIcon.tsx';
+import { generateMockup } from './services/geminiService.ts';
+import type { UploadedFile } from './types.ts';
 
 export default function App() {
   const [logoFile, setLogoFile] = useState<UploadedFile | null>(null);

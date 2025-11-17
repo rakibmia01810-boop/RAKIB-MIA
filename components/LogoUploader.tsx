@@ -1,9 +1,8 @@
-
 import React, { useState, useCallback } from 'react';
-import { fileToBase64 } from '../utils/fileUtils';
-import type { UploadedFile } from '../types';
-import { UploadCloudIcon } from './icons/UploadCloudIcon';
-import { XIcon } from './icons/XIcon';
+import { fileToBase64 } from '../utils/fileUtils.ts';
+import type { UploadedFile } from '../types.ts';
+import { UploadCloudIcon } from './icons/UploadCloudIcon.tsx';
+import { XIcon } from './icons/XIcon.tsx';
 
 interface LogoUploaderProps {
   onLogoUpload: (file: UploadedFile | null) => void;

@@ -1,9 +1,8 @@
-
 import React from 'react';
-import { Spinner } from './Spinner';
-import { Button } from './Button';
-import { DownloadIcon } from './icons/DownloadIcon';
-import { ImageIcon } from './icons/ImageIcon';
+import { Spinner } from './Spinner.tsx';
+import { Button } from './Button.tsx';
+import { DownloadIcon } from './icons/DownloadIcon.tsx';
+import { ImageIcon } from './icons/ImageIcon.tsx';
 
 interface GeneratedImageProps {
   isLoading: boolean;

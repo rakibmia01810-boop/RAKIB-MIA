@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merch Mockup Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
+    <!-- Add Babel Standalone for TSX/JSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="importmap">
 {
   "imports": {
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
@@ -19,6 +21,6 @@
 </head>
   <body class="bg-slate-900 text-white">
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
